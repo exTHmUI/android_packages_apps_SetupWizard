@@ -27,8 +27,6 @@ android_app {
 
     certificate: "platform",
 
-    sdk_version: "current",
-
     static_libs: [
         "androidx.appcompat_appcompat",
         "com.google.android.material_material_md3",
