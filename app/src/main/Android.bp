@@ -27,6 +27,8 @@ android_app {
 
     certificate: "platform",
 
+    overrides: ["Provision"],
+
     static_libs: [
         "androidx.appcompat_appcompat",
         "com.google.android.material_material_md3",
