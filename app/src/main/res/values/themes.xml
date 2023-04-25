@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SetupWizard" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/system_accent</item>
+        <item name="colorPrimaryDark">@color/system_accent_darker</item>
+        <item name="colorSecondary">@color/system_accent_2</item>
+        <item name="android:statusBarColor">@color/netrual_color</item>
+        <item name="android:colorBackground">@color/netrual_color</item>
+
+        <item name="colorPrimaryVariant">@color/system_accent</item>
+        <item name="colorSecondaryVariant">@color/system_accent_2</item>
+        <item name="colorSecondaryContainer">@color/system_accent_soft</item>
+
+        <!-- Customize your theme here. -->
+        <item name="scrimBackground">@color/netrual_color</item>
+        <item name="colorSurface">@color/netrual_color</item>
+        <item name="android:navigationBarColor">@color/netrual_color</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="SwitchStyle" parent="@android:style/Widget.Material.CompoundButton.Switch">
+        <item name="android:switchMinWidth">52dp</item>
+        <item name="android:minHeight">@dimen/preferred_minimum_touch_target</item>
+        <item name="android:track">@drawable/switch_track</item>
+        <item name="android:thumb">@drawable/switch_thumb</item>
+    </style>
+
+    <style name="SettingsSpinnerDropdown">
+        <item name="android:textAppearance">@android:style/TextAppearance.DeviceDefault.Medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/spinner_dropdown_color</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:minHeight">@dimen/spinner_dropdown_height</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">36dp</item>
+        <item name="android:paddingTop">@dimen/spinner_padding_top_or_bottom</item>
+        <item name="android:paddingBottom">@dimen/spinner_padding_top_or_bottom</item>
+    </style>
+
+</resources>

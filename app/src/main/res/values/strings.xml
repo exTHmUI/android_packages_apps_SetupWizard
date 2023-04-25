@@ -1,0 +1,76 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Setup Wizard</string>
+    <string name="btn_priv"> Prev </string>
+    <string name="btn_next"> Next </string>
+    <string name="btn_finish">" Finish "</string>
+    <string name="lang_en_us" translatable="false">English (United States)</string>
+    <string name="lang_zh_cn" translatable="false">简体中文（中国大陆）</string>
+    <string name="lang_zh_tw" translatable="false">繁體中文（中國台灣省）</string>
+    <string name="lang_ja_jp" translatable="false">日本語</string>
+    <string name="lang_other" >Other language</string>
+    <string name="lang_zh_hk" translatable="false">繁體中文（中國香港）</string>
+    <string name="welcome_text_en">Hi there</string>
+    <string name="welcome_accessibility">Accessibility</string>
+    <string name="welcome_emergency_call">Emergency call</string>
+    <string name="access_desc_lang">Switch System Language</string>
+    <string name="access_desc_accessibility">Accessibility Settings</string>
+    <string name="access_desc_emergency">Emergency Call</string>
+    <string name="access_desc_priv">Previous Settings page</string>
+    <string name="access_desc_next">Next Settings page</string>
+    <string name="access_desc_welcome">Welcome banner</string>
+
+    <!-- Data & SIM -->
+    <string name="data_sim_title">Data &amp; SIM</string>
+    <string name="default_call_sub">Preferred for calls</string>
+    <string name="default_sms_sub">Preferred for SMS</string>
+    <string name="default_data_sub">Preferred for mobile data</string>
+    <string name="default_card_stub" translatable="false">CARD 1</string>
+    <string name="oem_preferred_feedback_reporter" translatable="false"/>
+    <string name="sim_card">SIM Card</string>
+    <string name="status_unavailable">Unavailable</string>
+    <string name="calls_and_sms_ask_every_time">Ask every time</string>
+    <string name="choose_default_sim_title">Choose a SIM Card</string>
+    <string name="mobile_data_warning_title">Want to turn on the mobile data network?</string>
+    <string name="mobile_data_warning_message">When enabled, your phone will connect to the Internet using the mobile data network. The cost of the traffic will be charged by the carrier.</string>
+
+    <!-- Nav Settings -->
+    <string name="setup_nav_settings">Set Navigation Bar</string>
+    <string name="setup_nav_applying">Applying…</string>
+    <string name="setup_nav_applying_failed">Apply gesture navigation failed</string>
+    <string name="nav_gesture">Gesture navigation</string>
+    <string name="nav_three_button">3-button navigation</string>
+    <string name="setup_nav_gesture_not_available_title">Gesture is unavailable</string>
+    <string name="setup_nav_gesture_not_available_message">Your device does not support gesture navigation.</string>
+
+    <!-- Date & Time -->
+    <string name="time_settings_title">Date &amp; Time</string>
+    <string name="set_ntp_title">Select NTP server</string>
+    <string name="set_ntp_toast">Set NTP server to <xliff:g id="url" example="ntp.aliyun.com">%1$s</xliff:g></string>
+    <string name="set_time_title">Click to change system time</string>
+    <string name="set_date_title">Click to change system date</string>
+    <string name="switch_24h_format">24-hour format</string>
+    <string name="switch_auto_time">Time automatically</string>
+
+    <!-- Misc Settings -->
+    <string name="misc_settings_title">Any other settings to operate? </string>
+    <string name="screen_lock_title">Screen lock</string>
+    <string name="fingerprint_title">Fingerprint</string>
+    <string name="multiuser_title">Multi-users</string>
+    <string name="wallpaper_title">Wallpaper &amp; style</string>
+    <string name="fingerprint_not_support">Cannot use fingerprint</string>
+    <string name="fingerprint_not_support_summary">Your device is not support fingerprint.</string>
+    <string name="multiuser_not_support">Cannot use multi-users</string>
+    <string name="multiuser_not_support_summary">Current System was disabled multi-users</string>
+    <!-- Package name and fully-qualified class name for the wallpaper picker activity. -->
+    <string name="config_wallpaper_picker_package" translatable="false">com.android.wallpaper</string>
+    <string name="config_wallpaper_picker_class" translatable="false">com.android.customization.picker.CustomizationPickerActivity</string>
+    <!-- Fully-qualified class name for the styles & wallpaper picker activity. -->
+    <string name="config_styles_and_wallpaper_picker_class" translatable="false">com.android.customization.picker.CustomizationPickerActivity</string>
+    <!-- Intent extra for wallpaper picker activity. -->
+    <string name="config_wallpaper_picker_launch_extra" translatable="false">com.android.wallpaper.LAUNCH_SOURCE</string>
+
+    <!-- Finish setup -->
+    <string name="finish_setup_title">Setup is complete! </string>
+    <string name="finish_setup_summary">Click "Finish" to exit the Setup Wizard.</string>
+
+</resources>

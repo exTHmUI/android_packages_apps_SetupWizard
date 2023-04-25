@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="welcome_text" type="id" />
+    <item name="gesture_navigation" type="id" />
+    <item name="three_button_navigation" type="id" />
+    <item name="default_sim_sub_1" type="id" />
+    <item name="default_sim_sub_2" type="id" />
+    <item name="default_sim_sub_ask" type="id" />
+</resources>

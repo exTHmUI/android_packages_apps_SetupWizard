@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:paddingStart="36dp"
+        android:paddingEnd="@dimen/nav_btn_margin"
+        android:paddingBottom="@dimen/layout_margin_bottom"
+        android:id="@+id/welcomeLayout">
+
+        <LinearLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <net.hearnsoft.setupwizard.widgets.SuperTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="4dp"
+                android:id="@+id/welcome_text"
+                android:contentDescription="@string/access_desc_welcome"
+                android:layout_weight="1"
+                android:textSize="36sp"
+                tools:text="@string/welcome_text_en"/>
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="160dp"
+                android:maxWidth="256dp"
+                android:maxHeight="256dp"
+                android:layout_marginEnd="8dp"
+                android:layout_gravity="end"
+                android:src="@drawable/main_intro"
+                tools:src="@drawable/main_intro" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/banner"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/welcome_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="20sp"
+                android:contentDescription="@string/access_desc_lang"
+                app:elevation="8dp"
+                app:icon="@drawable/ic_language"
+                tools:text="简体中文（中国）" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="20sp"
+                android:contentDescription="@string/access_desc_accessibility"
+                android:text="@string/welcome_accessibility"
+                android:id="@+id/welcome_accessibility"
+                app:elevation="8dp"
+                app:icon="@drawable/ic_accessibility"
+                tools:text="无障碍服务"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="20sp"
+                android:contentDescription="@string/access_desc_emergency"
+                android:id="@+id/welcome_emergency_call"
+                android:text="@string/welcome_emergency_call"
+                app:elevation="8dp"
+                app:icon="@drawable/ic_call" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

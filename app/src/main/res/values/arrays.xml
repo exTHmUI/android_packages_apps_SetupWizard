@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="welcome_text">
+        <item>Hi there!</item>
+        <item>你好呀！</item>
+        <item>哈嘍~</item>
+        <item>こんにちは</item>
+        <item>안녕하세요</item>
+        <item>здравствй</item>
+        <item>Bonjour</item>
+        <item>Hallo.</item>
+        <item>hola</item>
+    </string-array>
+
+    <string-array name="gesture_title_array">
+        <item>@string/nav_gesture</item>
+        <item>@string/nav_three_button</item>
+    </string-array>
+
+    <string-array name="ntp_server">
+        <item>ntp.aliyun.com</item>
+        <item>ntp1.aliyun.com</item>
+        <item>ntp2.aliyun.com</item>
+        <item>time1.cloud.tencent.com</item>
+        <item>time2.cloud.tencent.com</item>
+        <item>ntp.tuna.tsinghua.edu.cn</item>
+        <item>cn.pool.ntp.org</item>
+        <item>cn.ntp.org.cn</item>
+        <item>time.windows.com</item>
+        <item>time.apple.com</item>
+        <item>time.google.com</item>
+        <item>time.cloudflare.com</item>
+        <item>time.gpsonextra.net</item>
+    </string-array>
+
+    <string-array name="random_text">
+        <item>地符「不譲土壌の剣」</item>
+        <item>非想「非想非非想の剣」</item>
+        <item>天符「天道是非の剣」</item>
+        <item>地震「先憂後楽の剣」</item>
+        <item>気符「天啓気象の剣」</item>
+        <item>要石「天地開闢プレス」</item>
+        <item>気符「無念無想の境地」</item>
+        <item>「全人類の緋想天」</item>
+    </string-array>
+
+</resources>

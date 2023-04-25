@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pager"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_bar_height"
+        android:id="@+id/nav_bar"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/nav_bar_bottom_margin">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nav_priv"
+            android:layout_gravity="start|center_vertical"
+            android:text="@string/btn_priv"
+            android:contentDescription="@string/access_desc_priv"
+            android:layout_marginStart="@dimen/nav_btn_margin"
+            style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+            app:icon="@drawable/ic_left"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nav_next"
+            android:layout_gravity="end|center_vertical"
+            android:text="@string/btn_next"
+            android:contentDescription="@string/access_desc_next"
+            android:layout_marginEnd="@dimen/nav_btn_margin"
+            style="@style/Widget.Material3.Button.TonalButton.Icon"
+            app:icon="@drawable/ic_right"
+            app:iconGravity="end"/>
+
+    </FrameLayout>
+
+</FrameLayout>

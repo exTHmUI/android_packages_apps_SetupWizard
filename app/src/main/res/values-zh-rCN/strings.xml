@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">设置向导</string>
+    <string name="btn_priv">上一步</string>
+    <string name="btn_next">下一步</string>
+    <string name="btn_finish">完成</string>
+    <string name="lang_other">其他语言</string>
+    <string name="welcome_text_en">你好呀！</string>
+    <string name="welcome_accessibility">无障碍服务</string>
+    <string name="welcome_emergency_call">紧急拨号</string>
+    <string name="access_desc_lang">切换系统语言</string>
+    <string name="access_desc_accessibility">无障碍服务设置</string>
+    <string name="access_desc_emergency">紧急拨号器</string>
+    <string name="access_desc_priv">上一个设置页面</string>
+    <string name="access_desc_next">下一个设置页面</string>
+    <string name="access_desc_welcome">多语种欢迎标语</string>
+
+    <!-- Data & SIM -->
+    <string name="data_sim_title">默认通话和短信设置</string>
+    <string name="default_call_sub">通话首选</string>
+    <string name="default_sms_sub">短信首选</string>
+    <string name="default_data_sub">移动数据网络首选</string>
+    <string name="sim_card">SIM 卡</string>
+    <string name="status_unavailable">不可用</string>
+    <string name="calls_and_sms_ask_every_time">每次都询问</string>
+    <string name="choose_default_sim_title">选择一个 SIM 卡账户</string>
+    <string name="mobile_data_warning_title">要开启移动数据网络吗？</string>
+    <string name="mobile_data_warning_message">开启后，您的手机将使用移动数据网络连接互联网。所产生的流量费用将由运营商收取。</string>
+
+    <!-- Nav Settings -->
+    <string name="setup_nav_settings">设置导航栏手势</string>
+    <string name="setup_nav_applying">应用中…</string>
+    <string name="setup_nav_applying_failed">应用导航栏手势失败</string>
+    <string name="nav_gesture">手势导航</string>
+    <string name="nav_three_button">“三按钮”导航</string>
+    <string name="setup_nav_gesture_not_available_title">手势导航不可用</string>
+    <string name="setup_nav_gesture_not_available_message">您的设备不支持手势导航。</string>
+
+    <!-- Date & Time -->
+    <string name="time_settings_title">时间日期设置</string>
+    <string name="set_ntp_title">选择 NTP 服务器</string>
+    <string name="set_ntp_toast">已设置 NTP 服务器为 <xliff:g id="url" example="ntp.aliyun.com">%1$s</xliff:g></string>
+    <string name="set_time_title">点击设置系统时间</string>
+    <string name="set_date_title">点击设置系统日期</string>
+    <string name="switch_24h_format">24 小时制</string>
+    <string name="switch_auto_time">自动更新时间</string>
+
+    <!-- Misc Settings -->
+    <string name="misc_settings_title">还有其他设置要操作吗？</string>
+    <string name="screen_lock_title">屏幕锁定</string>
+    <string name="fingerprint_title">指纹设置</string>
+    <string name="multiuser_title">多用户设置</string>
+    <string name="wallpaper_title">壁纸和样式</string>
+    <string name="fingerprint_not_support">无法使用指纹</string>
+    <string name="fingerprint_not_support_summary">您的设备不支持指纹识别。</string>
+    <string name="multiuser_not_support">无法使用多用户</string>
+    <string name="multiuser_not_support_summary">当前系统已禁用多用户功能。</string>
+
+    <!-- Finish setup -->
+    <string name="finish_setup_title">设置已完成！</string>
+    <string name="finish_setup_summary">单击 “完成” 即可开始使用。</string>
+
+</resources>
