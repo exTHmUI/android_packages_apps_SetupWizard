@@ -129,5 +129,8 @@ public class GestureFragment extends Fragment implements RadioGroup.OnCheckedCha
             dialogs.dismiss();
             Toast.makeText(requireContext(), getString(R.string.setup_nav_applying_failed), Toast.LENGTH_SHORT).show();
         }
+        if (dialogs != null) {
+            dialogs.dismiss();
+        }
     }
 }
