@@ -32,6 +32,7 @@ android_app {
     static_libs: [
         "androidx.appcompat_appcompat",
         "com.google.android.material_material_md3",
+        "androidx.databinding_viewbinding",
     ],
 
     required: [ "privapp_whitelist_net.hearnsoft.setupwizard" ],
