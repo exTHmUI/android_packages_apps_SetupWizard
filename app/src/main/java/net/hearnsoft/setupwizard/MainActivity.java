@@ -67,7 +67,6 @@ public class MainActivity extends FragmentActivity {
         //设置 ViewPager2属性
         binding.pager.setCurrentItem(0,/* smooth scroll */true);
         binding.pager.setUserInputEnabled(false);
-        setSystemUIParam(false);
     }
 
     private void initNavBar(){
@@ -95,7 +94,9 @@ public class MainActivity extends FragmentActivity {
     private void next(){
         int current = binding.pager.getCurrentItem();
         if (isFinish){
-            FinishSetupWizard();
+            UIUtil.finishSetupWizard(this);
+            UIUtil.enableStatusBar(this);
+            finish();
         }
         if (!isWLANMode) {
             jumpToWLANSettings();
@@ -143,40 +144,5 @@ public class MainActivity extends FragmentActivity {
         }
 
     }
-
-    private void FinishSetupWizard(){
-        setSystemUIParam(true);
-        Settings.Global.putInt(
-                this.getContentResolver(),
-                Settings.Global.DEVICE_PROVISIONED,
-                1
-        );
-        Settings.Secure.putInt(
-                this.getContentResolver(),
-                Settings.Secure.USER_SETUP_COMPLETE,
-                1
-        );
-
-        PackageManager manager = this.getPackageManager();
-        ComponentName pkgName = new ComponentName(this,MainActivity.class);
-
-        manager.setComponentEnabledSetting(pkgName,
-                PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
-                PackageManager.DONT_KILL_APP);
-        finish();
-    }
-
-    private void setSystemUIParam(boolean status){
-        if (status){
-            UIUtil.enableStatusBar();
-        } else {
-            mStatusBarManager  = UIUtil.disableStatusBar(this);
-        }
-    }
-
-    public static StatusBarManager getStatusBarManager() {
-        return mStatusBarManager;
-    }
-
 
 }
