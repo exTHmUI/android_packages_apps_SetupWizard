@@ -1,10 +1,11 @@
 package net.hearnsoft.setupwizard.views;
 
 import android.annotation.SuppressLint;
-import android.app.AlarmManager;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
+import android.app.timedetector.ManualTimeSuggestion;
+import android.app.timedetector.TimeDetector;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -38,7 +39,8 @@ public class DateTimeFragment extends Fragment
     private FragmentDatetimeViewBinding binding;
     private static final String HOURS_12 = "12";
     private static final String HOURS_24 = "24";
-    private Calendar calendar;
+    // Minimum time is Nov 5, 2007, 0:00.
+    private long MIN_DATE = 1194220800000L;
     private boolean isAutoTimeEnabled, is24HourFormat;
 
     private final BroadcastReceiver mIntentReceiver = new BroadcastReceiver() {
@@ -52,7 +54,6 @@ public class DateTimeFragment extends Fragment
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = FragmentDatetimeViewBinding.inflate(getLayoutInflater());
-        calendar = Calendar.getInstance();
         setNtpServer(getResources().getStringArray(R.array.ntp_server)[0]);
         isAutoTimeEnabled = isAutoTimeEnabled();
         is24HourFormat = is24HourLocale(Locale.getDefault());
@@ -172,11 +173,15 @@ public class DateTimeFragment extends Fragment
         c.set(Calendar.MINUTE, minute);
         c.set(Calendar.SECOND, 0);
         c.set(Calendar.MILLISECOND, 0);
-        long when = c.getTimeInMillis();
+        long when = Math.max(c.getTimeInMillis(), MIN_DATE);
 
         if (when / 1000 < Integer.MAX_VALUE) {
-            ((AlarmManager) requireContext().getSystemService(Context.ALARM_SERVICE)).setTime(when);
+            TimeDetector timeDetector = requireContext().getSystemService(TimeDetector.class);
+            ManualTimeSuggestion manualTimeSuggestion =
+                    TimeDetector.createManualTimeSuggestion(when, "Settings: Set time");
+            timeDetector.suggestManualTime(manualTimeSuggestion);
         }
+        updateTimeAndDateDisplay();
     }
 
     //设置系统日期
@@ -186,11 +191,15 @@ public class DateTimeFragment extends Fragment
         c.set(Calendar.YEAR, year);
         c.set(Calendar.MONTH, month);
         c.set(Calendar.DAY_OF_MONTH, day);
-        long when = calendar.getTimeInMillis();
+        long when = Math.max(c.getTimeInMillis(), MIN_DATE);
 
         if (when / 1000 < Integer.MAX_VALUE) {
-            ((AlarmManager) requireContext().getSystemService(Context.ALARM_SERVICE)).setTime(when);
+            TimeDetector timeDetector = requireContext().getSystemService(TimeDetector.class);
+            ManualTimeSuggestion manualTimeSuggestion =
+                    TimeDetector.createManualTimeSuggestion(when, "Settings: Set date");
+            timeDetector.suggestManualTime(manualTimeSuggestion);
         }
+        updateTimeAndDateDisplay();
     }
 
     //显示时间选择器
