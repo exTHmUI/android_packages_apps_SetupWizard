@@ -17,6 +17,9 @@
         <item name="colorSurface">@color/netrual_color</item>
         <item name="android:navigationBarColor">@color/netrual_color</item>
         <item name="android:windowLightStatusBar">true</item>
+        <!-- enable window blur -->
+        <item name="android:windowBlurBehindEnabled">true</item>
+        <item name="android:windowBlurBehindRadius">6dp</item>
     </style>
 
     <style name="SwitchStyle" parent="@android:style/Widget.Material.CompoundButton.Switch">
