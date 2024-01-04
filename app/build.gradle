@@ -10,8 +10,8 @@ android {
         applicationId "net.hearnsoft.setupwizard"
         minSdk 31
         targetSdk 33
-        versionCode 1
-        versionName "1.0.0"
+        versionCode 9999
+        versionName "13"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

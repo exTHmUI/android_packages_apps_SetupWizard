@@ -51,6 +51,11 @@
                 <category android:name="android.intent.category.SETUP_WIZARD"/>
             </intent-filter>
         </activity>
+
+        <activity android:name=".TestLaunchSetup"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:exported="true" />
     </application>
 
 </manifest>
