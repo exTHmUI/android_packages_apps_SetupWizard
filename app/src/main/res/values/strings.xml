@@ -54,20 +54,11 @@
     <!-- Misc Settings -->
     <string name="misc_settings_title">Any other settings to operate? </string>
     <string name="screen_lock_title">Screen lock</string>
-    <string name="fingerprint_title">Fingerprint</string>
+    <string name="sound_title">Sound &amp; vibration</string>
     <string name="multiuser_title">Multi-users</string>
-    <string name="wallpaper_title">Wallpaper &amp; style</string>
-    <string name="fingerprint_not_support">Cannot use fingerprint</string>
-    <string name="fingerprint_not_support_summary">Your device is not support fingerprint.</string>
+    <string name="display_title">Display settings</string>
     <string name="multiuser_not_support">Cannot use multi-users</string>
     <string name="multiuser_not_support_summary">Current System was disabled multi-users</string>
-    <!-- Package name and fully-qualified class name for the wallpaper picker activity. -->
-    <string name="config_wallpaper_picker_package" translatable="false">com.android.wallpaper</string>
-    <string name="config_wallpaper_picker_class" translatable="false">com.android.customization.picker.CustomizationPickerActivity</string>
-    <!-- Fully-qualified class name for the styles & wallpaper picker activity. -->
-    <string name="config_styles_and_wallpaper_picker_class" translatable="false">com.android.customization.picker.CustomizationPickerActivity</string>
-    <!-- Intent extra for wallpaper picker activity. -->
-    <string name="config_wallpaper_picker_launch_extra" translatable="false">com.android.wallpaper.LAUNCH_SOURCE</string>
 
     <!-- Finish setup -->
     <string name="finish_setup_title">Setup is complete! </string>

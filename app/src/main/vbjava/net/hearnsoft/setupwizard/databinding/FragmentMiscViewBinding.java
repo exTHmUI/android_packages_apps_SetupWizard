@@ -20,7 +20,7 @@ public final class FragmentMiscViewBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
-  public final MaterialCardView fingerprintSettings;
+  public final MaterialCardView displaySettings;
 
   @NonNull
   public final MaterialCardView lockSettings;
@@ -29,16 +29,16 @@ public final class FragmentMiscViewBinding implements ViewBinding {
   public final MaterialCardView multiuserSettings;
 
   @NonNull
-  public final MaterialCardView wallpaperSettings;
+  public final MaterialCardView soundSettings;
 
   private FragmentMiscViewBinding(@NonNull FrameLayout rootView,
-      @NonNull MaterialCardView fingerprintSettings, @NonNull MaterialCardView lockSettings,
-      @NonNull MaterialCardView multiuserSettings, @NonNull MaterialCardView wallpaperSettings) {
+      @NonNull MaterialCardView displaySettings, @NonNull MaterialCardView lockSettings,
+      @NonNull MaterialCardView multiuserSettings, @NonNull MaterialCardView soundSettings) {
     this.rootView = rootView;
-    this.fingerprintSettings = fingerprintSettings;
+    this.displaySettings = displaySettings;
     this.lockSettings = lockSettings;
     this.multiuserSettings = multiuserSettings;
-    this.wallpaperSettings = wallpaperSettings;
+    this.soundSettings = soundSettings;
   }
 
   @Override
@@ -68,9 +68,9 @@ public final class FragmentMiscViewBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.fingerprint_settings;
-      MaterialCardView fingerprintSettings = ViewBindings.findChildViewById(rootView, id);
-      if (fingerprintSettings == null) {
+      id = R.id.display_settings;
+      MaterialCardView displaySettings = ViewBindings.findChildViewById(rootView, id);
+      if (displaySettings == null) {
         break missingId;
       }
 
@@ -86,14 +86,14 @@ public final class FragmentMiscViewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.wallpaper_settings;
-      MaterialCardView wallpaperSettings = ViewBindings.findChildViewById(rootView, id);
-      if (wallpaperSettings == null) {
+      id = R.id.sound_settings;
+      MaterialCardView soundSettings = ViewBindings.findChildViewById(rootView, id);
+      if (soundSettings == null) {
         break missingId;
       }
 
-      return new FragmentMiscViewBinding((FrameLayout) rootView, fingerprintSettings, lockSettings,
-          multiuserSettings, wallpaperSettings);
+      return new FragmentMiscViewBinding((FrameLayout) rootView, displaySettings, lockSettings,
+          multiuserSettings, soundSettings);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -48,11 +48,9 @@
     <!-- Misc Settings -->
     <string name="misc_settings_title">还有其他设置要操作吗？</string>
     <string name="screen_lock_title">屏幕锁定</string>
-    <string name="fingerprint_title">指纹设置</string>
+    <string name="sound_title">提示音与震动</string>
     <string name="multiuser_title">多用户设置</string>
-    <string name="wallpaper_title">壁纸和样式</string>
-    <string name="fingerprint_not_support">无法使用指纹</string>
-    <string name="fingerprint_not_support_summary">您的设备不支持指纹识别。</string>
+    <string name="display_title">显示设置</string>
     <string name="multiuser_not_support">无法使用多用户</string>
     <string name="multiuser_not_support_summary">当前系统已禁用多用户功能。</string>
 
